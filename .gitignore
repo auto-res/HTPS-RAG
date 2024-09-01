@@ -1,0 +1,16 @@
+**/__pycache__/
+**/.DS_Store
+
+docker/.env
+docker/build.sh
+docker/*.sif
+docker/tmp
+docker/home
+src/data/
+src/tests/tests_data/
+tmp
+venv
+*.pem
+
+logs
+pip-*

@@ -1,0 +1,27 @@
+version: '3.8'
+services:
+  python:
+    restart: always
+    build:
+      context: .
+      args:
+        USER_ID: $USER_ID
+        GROUP_ID: $GROUP_ID
+        USERNAME: $USERNAME
+    container_name: $CONTAINER_NAME
+    image: htps:latest
+    user: $USER_ID:$GROUP_ID
+    working_dir: '/home/myuser/src'
+    extra_hosts:
+        - 'raw.githubusercontent.com:151.101.84.133'
+    tty: true
+    volumes:
+      - ../src:/home/myuser/src
+    runtime: nvidia
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
