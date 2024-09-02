@@ -39,6 +39,21 @@ pip install -e src/app/LeanDojo/
 python src/app/gym/evaluate_minif2f.py
 ```
 
+## Acknowledgements
+
+This project has been made possible with the support and contributions of several individuals. Special thanks to:
+
+- **Developers**:
+  - Kei Tsukamoto
+  - Fumiya Uchiyama
+
+- **Advisors**:
+  - Sho Sonoda
+  - Akiyoshi Sannai
+  - Wataru Kumagai
+
+We deeply appreciate your invaluable support and advice.
+
 ## Reference
 
 Yang, K., Swope, A., Gu, A., Chalamala, R., Song, P., Yu, S., Godil, S., Prenger, R., & Anandkumar, A. (2023). LeanDojo: Theorem Proving with Retrieval-Augmented Language Models. In Proceedings of the Neural Information Processing Systems Conference (NeurIPS 2023), Datasets and Benchmarks Track, Oral presentation.
